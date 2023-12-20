@@ -1,20 +1,22 @@
 import { useState } from "react"
 import { ArrowLeftIcon, ArrowRightIcon } from "@heroicons/react/24/outline"
+// import Lottie from "lottie-react"
+// import animationData from "../../public/images/school.json";
 
 function Carousel() {
   const slides = [
     {
-      "img": "images/rep.jpeg"
+      "img": "images/blue.jpeg"
     },
     {
-      "img": "images/rep1.jpeg"
+      "img": "images/grey.jpeg"
     },
     {
-      "img": "images/rep2.jpeg"
-    },
-    {
-      "img": "images/rep3.jpeg"
+      "img": "images/dirt.jpeg"
     }
+    // {
+    //   <Lottie animationData={animationData} />
+    // }
   ]
 
   const [currentIndex, setCurrentIndex] = useState(0)
@@ -42,10 +44,10 @@ function Carousel() {
       className="w-full h-full rounded-2xl bg-center bg-cover duration-500">
 
       </div>
-      <div className="absolute group-hover:block top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-blue-500 cursor-pointer ">
+      <div className="absolute group-hover:block top-[50%] -translate-x-0 translate-y-[-50%] left-5 text-2xl rounded-full p-2 bg-white/20 cursor-pointer ">
         <ArrowLeftIcon onClick={prevSlide} width={20} />
       </div>
-      <div className="absolute group-hover:block top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-blue-500 cursor-pointer ">
+      <div className="absolute group-hover:block top-[50%] -translate-x-0 translate-y-[-50%] right-5 text-2xl rounded-full p-2 bg-white/30 cursor-pointer ">
         <ArrowRightIcon onClick={nextSlide} width={20} /> 
       </div>
 

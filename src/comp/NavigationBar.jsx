@@ -8,14 +8,14 @@ function NavigationBar() {
   };
 
   return (
-    <nav className="py-4 fixed z-[9999] w-full justify-between bg-white">
+    <nav className="py-4 fixed flex z-[9999] w-full justify-between bg-white">
       <h1 className="text-xl font-semibold text-slate-800 font-coolvetica mx-4">a r c a d e</h1>
       {/* LG SCREEN */}
       <div>
         <div>
           <div className="hidden md:block">
             <div className="flex justify-end gap-4 mx-10">
-              <a href="">Home</a>
+              <a href="/">Home</a>
               <a href="">About</a>
               <button className="bg-slate-200 rounded-xl w-24 py-1 -mt-1">
               <a href="/login">Login</a>
@@ -66,7 +66,7 @@ function NavigationBar() {
       {isOpen && (
       <div className="md:block">
         <div className="gap-4 flex flex-col mx-10">
-          <a href="">Home</a>
+          <a href="/">Home</a>
           <a href="">About</a>
           <button className="bg-slate-200 rounded-xl w-24 py-1 -ml-6">
             <a href="/login">Login</a>
