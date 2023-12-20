@@ -50,7 +50,7 @@ function Login() {
 
             <div className="row">
               <small>
-                Don't have an account?
+                Don&apos;t have an account?
                 <a href="/register"> Sign Up</a>
               </small>
             </div>
