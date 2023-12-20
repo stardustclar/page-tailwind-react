@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&family=Mansalva&family=Orelega+One&family=Poppins&family=Roboto&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: coolvetica;
+  src: url(/public/font/coolvetica\ rg.otf);
+}
+
+/* @media (max-width: 550px) {
+    .xs {
+      width: 100%;
+    }
+  } */
+
